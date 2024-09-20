@@ -11,6 +11,8 @@ function Movie({ movie }) {
         setViewModal(true)
     }
 
+
+
     return (
         <>
             {
