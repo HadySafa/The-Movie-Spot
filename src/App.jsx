@@ -5,7 +5,7 @@ import SearchResults from "./Components/SearchResults";
 import FavoritesSection from './Components/FavoritesSection'
 import GenreSection from "./Components/GenreSection";
 import ThisYearSection from './Components/ThisYearSection'
-
+import Type from "./Components/Type";
 
 function App() {
 
@@ -18,6 +18,7 @@ function App() {
       <FavoritesSection />
       <GenreSection />
       <ThisYearSection />
+      <Type />
     </>
 
   )

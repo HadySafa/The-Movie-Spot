@@ -12,12 +12,18 @@ function SearchResults(){
 
     useEffect( () => {
 
-        if(component.current){
-            component.current.scrollIntoView({
-                behavior:"smooth",
-                block: 'center'
-            })
+        function handler(){
+            if(component.current){
+                component.current.scrollIntoView({
+                    behavior:"smooth",
+                    block: 'center'
+                })
+            }
         }
+
+        const timeout = setTimeout( handler,1000)
+
+        return () => clearTimeout(timeout)
 
     },[movies])
 
