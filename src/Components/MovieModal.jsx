@@ -1,5 +1,3 @@
-import { BsX } from "react-icons/bs";
-import { FaHeart } from "react-icons/fa";
 import { useContext, useEffect } from "react";
 import { MyContext } from "../Context";
 
@@ -59,10 +57,6 @@ function MovieModal({ setViewModal, movie }) {
     return (
 
         <div id="overlay" className="fixed top-0 w-[100vw] h-[100vh] bg-black bg-opacity-80 flex justify-center items-center">
-
-
-            <BsX className="absolute top-4 right-4 text-gray-100 text-3xl" onClick={handleClose} />
-
 
             <div className="bg-gray-200 laptop:flex-row w-[80vw] tablet:w-[50vw] laptop:w-[50vw] p-4 flex flex-col gap-4 items-center font-serif">
 
