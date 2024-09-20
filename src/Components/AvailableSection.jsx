@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import MovieHeading from "./MovieHeading";
 import MovieList from "./MovieList";
 
+
 function AvailableSection() {
 
     const [movies, setMovies] = useState([])
@@ -10,7 +11,7 @@ function AvailableSection() {
     async function fetchApi(genre) {
 
         try {
-            const response = await fetch(`http://www.omdbapi.com/?s=${genre}&apikey=51dc81ec`);
+            const response = await fetch(`https://www.omdbapi.com/?s=${genre}&apikey=51dc81ec`);
             if (!response.ok) throw new Error("Error fetching data!")
             const data = await response.json();
             if (data) {

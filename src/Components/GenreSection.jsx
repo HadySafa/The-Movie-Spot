@@ -14,7 +14,7 @@ function GenreSection() {
         if (genre) {
             try {
                 setPending(true)
-                const response = await fetch(`http://www.omdbapi.com/?s=${genre}&apikey=51dc81ec`);
+                const response = await fetch(`https://www.omdbapi.com/?s=${genre}&apikey=51dc81ec`);
                 if (!response.ok) throw new Error("Error fetching data!")
                 const data = await response.json();
                 if (data) {
