@@ -6,7 +6,7 @@ function Header() {
     const {searchValue,setSearchValue} = useContext(MyContext);
     
     return (
-        <header className="sticky w-[100vw] z-50 top-0 bg-black bg-opacity-90 flex justify-evenly items-center h-[10vh]">
+        <header className="sticky w-[100vw] z-50 top-0 bg-black bg-opacity-90 flex justify-evenly items-center min-h-[10vh]">
 
             <div className="w-2/5 flex justify-center">
                 <p className="font-mono text-red font-normal tracking-normal text-lg

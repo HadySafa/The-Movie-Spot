@@ -56,15 +56,15 @@ function MovieModal({ setViewModal, movie }) {
 
     return (
 
-        <div id="overlay" className="fixed top-0 w-[100vw] h-[100vh] bg-black bg-opacity-80 flex justify-center items-center">
+        <div id="overlay" className=" fixed top-0 w-[100vw] h-[100vh] bg-black bg-opacity-80 flex justify-center items-center">
 
-            <div className="bg-gray-200 laptop:flex-row w-[80vw] tablet:w-[50vw] laptop:w-[50vw] p-4 flex flex-col gap-4 items-center font-serif">
+            <div className="bg-gray-200  tablet:flex-row w-[80vw] tablet:w-[50vw]  p-4 flex flex-col gap-4 items-center font-serif">
 
-                <img className="w-[90%] laptop:w-[50%] object-contain block" src={movie.Poster} alt="Movie's Poster" />
+                <img className="w-[90%] tablet:w-[50%] object-contain block" src={movie.Poster} alt="Movie's Poster" />
 
                 <div className="flex flex-col gap-4 text-lg tablet:text-xl laptop:text-2xl font-bold w-[90%] laptop:w-[50%]">
 
-                    <h4 className="text-red uppercase text-center laptop:text-start">{movie.Title}</h4>
+                    <h4 className="text-red uppercase text-center tablet:text-start">{movie.Title}</h4>
                     <p>
                         <span className="text-red">
                             {movie.Type === 'series' ? "Years: " : "Year: "}</span>
@@ -74,7 +74,7 @@ function MovieModal({ setViewModal, movie }) {
                         <span className="text-red mr-1">Type:</span>
                         {movie.Type}
                     </p>
-                    <button onClick={handleButtonClick} className="w-[100%] bg-dark-gray text-gray-100 py-1 laptop:w-[80%] text-lg hover:rounded-md transition-all">
+                    <button onClick={handleButtonClick} className="w-[100%] bg-dark-gray text-gray-100 py-1 laptop:w-[80%] text-[50%] hover:rounded-md transition-all">
                         {inFavorites(movie) ? "Remove from Favorites" : "Add to Favorites"}
                     </button>
                 </div>

@@ -31,7 +31,7 @@ function MovieList({ movies }) {
     }, [list.current])
 
     return (
-        <div id="list" ref={list} className="w-[100vw] min-h-[30vh] max-h-[40vh] tablet:max-h-[45vh] laptop:max-h-[50vh] overflow-x-auto flex flex-nowrap gap-2 laptop:gap-4 laptop:py-4">
+        <div id="list" ref={list} className="w-[100vw] min-h-[30vh] overflow-x-auto flex flex-nowrap gap-2 laptop:gap-4 laptop:py-4">
             {
                 movies && movies.length && movies.length > 0
                     ?

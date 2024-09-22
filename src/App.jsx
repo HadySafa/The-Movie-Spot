@@ -13,9 +13,9 @@ function App() {
 
     <>
       <Header />
+      <FavoritesSection />
       <AvailableSection />
       <SearchResults />
-      <FavoritesSection />
       <GenreSection />
       <ThisYearSection />
       <Type />
